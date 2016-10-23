@@ -1,0 +1,14 @@
+{
+	"name": "amp-framework/skeleton",
+	"description": "ampf skeleton application",
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"ampf\\skeleton\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=7.0.0",
+		"amp-framework/ampf": "^2"
+	}
+}
