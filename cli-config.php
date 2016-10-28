@@ -9,6 +9,8 @@ require (__DIR__ . '/vendor/autoload.php');
 // boot the applicationcontext and get merged config
 $config = \ampf\ApplicationContext::boot(
 	array(
+		(realpath(__DIR__) . '/vendor/amp-framework/ampf/config/default.php'),
+		(realpath(__DIR__) . '/vendor/amp-framework/ampf/config/cli.php'),
 		(realpath(__DIR__) . '/config/default.php'),
 		(realpath(__DIR__) . '/config/cli.php'),
 		(realpath(__DIR__) . '/config/local.php'),
@@ -16,7 +18,7 @@ $config = \ampf\ApplicationContext::boot(
 );
 
 // set up our beanfactory
-$beanFactory = new \ampf\beans\DefaultBeanFactory($config);
+$beanFactory = new \ampf\beans\impl\DefaultBeanFactory($config);
 
 // Get the doctrine entity manager
 $em = $beanFactory->get('EntityManagerFactory')->get();
