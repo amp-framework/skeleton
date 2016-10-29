@@ -1,10 +1,10 @@
 <?php
 
-namespace ampf\skeleton\beanAccess;
+namespace ampf\skeleton\beanAccess\repos;
 
 use \ampf\skeleton\doctrine\repositories\Test;
 
-trait TestRepositoryAccess
+trait Test
 {
 	protected $__testRepository = null;
 
@@ -16,9 +16,15 @@ trait TestRepositoryAccess
 		if ($this->__testRepository === null)
 		{
 			$this->setTestRepository(
-				$this->getBeanFactory()->get('EntityManagerFactory')
-				->get()
-				->getRepository('\ampf\skeleton\doctrine\entities\Test')
+				$this->getBeanFactory()->get(
+					'Doctrine.Repository.Test',
+					function(\ampf\beans\BeanFactory $beanFactory, array &$beanConfig) {
+						return $beanFactory
+							->get('EntityManagerFactory')
+							->get()
+							->getRepository('\ampf\skeleton\doctrine\entities\Test');
+					}
+				)
 			);
 		}
 		return $this->__testRepository;

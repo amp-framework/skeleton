@@ -6,7 +6,7 @@ use \ampf\skeleton\controller\http\AbstractController;
 
 class IndexController extends AbstractController
 {
-	use \ampf\skeleton\beanAccess\TestRepositoryAccess;
+	use \ampf\skeleton\beanAccess\repos\Test;
 
 	public function execute()
 	{

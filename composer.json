@@ -9,6 +9,6 @@
 	},
 	"require": {
 		"php": ">=7.0.0",
-		"amp-framework/ampf": "^2"
+		"amp-framework/ampf": "dev-master"
 	}
 }

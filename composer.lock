@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "637a3f36b085151b953c84c0113da51f",
-    "content-hash": "3806c5dc09c7c3e84a77d3ca381553d1",
+    "hash": "33ee7c27f4f5c3c4106e1c7d8780cccb",
+    "content-hash": "a569ff043397a644b19eda6760071d6f",
     "packages": [
         {
             "name": "amp-framework/ampf",
-            "version": "2.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amp-framework/ampf.git",
-                "reference": "ffa7c8105d53215d1c62f14856973ece654354ec"
+                "reference": "cf3156aebd8d0df66bc71fdfae13f6f1a60dc606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amp-framework/ampf/zipball/ffa7c8105d53215d1c62f14856973ece654354ec",
-                "reference": "ffa7c8105d53215d1c62f14856973ece654354ec",
+                "url": "https://api.github.com/repos/amp-framework/ampf/zipball/cf3156aebd8d0df66bc71fdfae13f6f1a60dc606",
+                "reference": "cf3156aebd8d0df66bc71fdfae13f6f1a60dc606",
                 "shasum": ""
             },
             "require": {
@@ -36,7 +36,7 @@
                 "MIT"
             ],
             "description": "ampf MVC PHP framework",
-            "time": "2016-10-28 20:00:03"
+            "time": "2016-10-29 12:59:26"
         },
         {
             "name": "doctrine/annotations",
@@ -108,16 +108,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "f8af318d14bdb0eff0336795b428b547bd39ccb6"
+                "reference": "b6f544a20f4807e81f7044d31e679ccbb1866dc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/f8af318d14bdb0eff0336795b428b547bd39ccb6",
-                "reference": "f8af318d14bdb0eff0336795b428b547bd39ccb6",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/b6f544a20f4807e81f7044d31e679ccbb1866dc3",
+                "reference": "b6f544a20f4807e81f7044d31e679ccbb1866dc3",
                 "shasum": ""
             },
             "require": {
@@ -174,7 +174,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-12-31 16:37:02"
+            "time": "2016-10-29 11:16:17"
         },
         {
             "name": "doctrine/collections",
@@ -865,7 +865,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "amp-framework/ampf": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
