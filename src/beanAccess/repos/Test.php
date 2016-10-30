@@ -37,4 +37,9 @@ trait Test
 	{
 		$this->__testRepository = $testRepository;
 	}
+
+	/**
+	 * @return \ampf\beans\BeanFactory
+	 */
+	abstract public function getBeanFactory();
 }
